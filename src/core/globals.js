@@ -42,7 +42,7 @@ export * from "./player-progress.js";
 export * from "./modal.js";
 export * from "./themes.js";
 export * from "./options.js";
-//export * from "./ui.js";
+export * from "./ui.js";
 
 export * from "./achievements/normal-achievement.js";
 export * from "./achievements/secret-achievement.js";
