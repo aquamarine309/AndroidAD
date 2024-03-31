@@ -1,4 +1,4 @@
-import AndroidSubtabButton from "./AndroidSubTabButton.js";
+import AndroidSubtabButton from "./AndroidSubtabButton.js";
 
 export default {
 	name: "AndroidSubtabBar",
