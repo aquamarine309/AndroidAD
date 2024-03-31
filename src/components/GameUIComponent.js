@@ -1,7 +1,7 @@
 import BackgroundAnimations from "./BackgroundAnimations.js";
 import GameUiComponentFixed from "./GameUiComponentFixed.js"
 import TabComponents from "./tabs/index.js";
-//import AndroidUI from "./ui-modes/android/AndroidUI.js";
+import AndroidUI from "./ui-modes/android/AndroidUI.js";
 
 export default {
   name: "GameUIComponent",

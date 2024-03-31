@@ -3,12 +3,6 @@ import CelestialQuoteModal from "./modals/celestial-quotes/CelestialQuoteModal.j
 import CreditsContainer from "./tabs/celestial-pelle/CreditsContainer.js";
 import FadeAway from "./tabs/celestial-pelle/FadeAway.js";
 import ModalProgressBar from "./modals/ModalProgressBar.js";
-import NewGame from "./tabs/celestial-pelle/NewGame.js";
-import PopupModal from "./modals/PopupModal.js";
-import SpectateGame from "./SpectateGame.js";
-import SpeedrunStatus from "./SpeedrunStatus.js";
-import AndroidUIHeader from "./ui-modes/android/AndroidUIHeader.js";
-import AndroidUIBottom from "./ui-modes/android/AndroidUIBottom.js";
 
 export default {
   name: "GameUiComponentFixed",
