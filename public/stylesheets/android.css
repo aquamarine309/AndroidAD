@@ -1,0 +1,576 @@
+@font-face {
+  font-family: Typewriter;
+  src: url("blob_font_regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("blob_font_bold.ttf");
+}
+
+@font-face {
+  font-family: Medium;
+  src: url("blob_font_medium.ttf")
+}
+
+:root {
+  --android-header-height: 5rem;
+  --color-android-ui: #008577;
+  --color-good: #127A20;
+  --color-bad: #B72B3F;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+.c-old-ui {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding-top: calc(var(--android-header-height) + 0.5rem);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.l-old-ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l-old-ui__page {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch;
+}
+
+.l-android-ui-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--android-header-height);
+}
+
+.c-android-ui-header {
+  background-color: var(--color-android-ui);
+  box-shadow: 0px 0.05rem 0.5rem 0.1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.8rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.c-android-ui-header-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.l-android-ui-header-info {
+  color: red;
+  font-family: Roboto;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  top: var(--android-header-height);
+}
+
+.l-game-header__center {
+  top: var(--android-header-height);
+}
+
+
+.l-open-navigation-drawer-button {
+  width: var(--android-header-height);
+  height: 100%;
+  text-align: center;
+  line-height: auto;
+  margin-left: 1rem;
+  margin-right: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-prestige-button-container {
+  color: #878787;
+  justify-content: center;
+  line-height: 2.1rem;
+}
+
+
+.c-info-color {
+  color: #878787;
+}
+
+.c-game-header--currency {
+  font-family: Roboto;
+}
+
+.l-old-ui__header {
+  width: 100%;
+}
+
+.c-dim-row--left {
+  width: auto;
+  margin: auto 0;
+  padding-left: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+.c-dim-row--medium {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+.c-dim-row--medium .c-dim-row__large {
+  text-align: center;
+}
+
+.l-dimensions-container {
+
+  padding: 0.5rem 0; /* TOP RIGHT BOTTOM LEFT */
+
+}
+
+.o-primary-btn--new {
+  overflow: hidden;
+  position: relative;
+  font-family: Typewriter, serif;
+  color: var(--color-text);
+  background-color: var(--color-base);
+  border: 0.1rem solid var(--color-good);
+  border-radius: var(--var-border-radius, 0.5rem);
+  width: 100%;
+  height: 2.8rem;
+  font-size: 1.1rem;
+  font-family: Medium;
+}
+
+.o-primary-btn--dimension-reset {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  font-size: 1rem;
+  padding: 0.5rem 0.1rem;
+  font-size: 0.95rem;
+  line-height: 1.2rem;
+  font-weight: bold;
+}
+
+.button-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fill-purchased {
+  float: left;
+  width: 20%;
+  height: 100%;
+  background-color: #9DC6A3;
+  border-radius: var(--var-border-radius, 0.5rem);
+  position: absolute;
+}
+
+.fill-possible {
+  float: left;
+  width: 40%;
+  height: 100%;
+  background-color: #B9E3BE;
+  border-radius: var(--var-border-radius, 0.5rem);
+  position: absolute;
+}
+
+.l-dimension-row-antimatter-dim:nth-child(2n) {
+  background-color: #C4E3FC;
+}
+
+.l-dimension-row-infinity-dim:nth-child(2n) {
+  background-color: #ECDDC0;
+}
+
+.l-dimension-row-time-dim:nth-child(2n) {
+  background-color: #E1D9FD;
+}
+
+.c-dim-amount {
+  font-size: 1.2rem;
+}
+
+.c-header-currency-info {
+  font-size: 1.25rem;
+}
+
+.modes-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0;
+}
+
+.tickspeed-buttons {
+  font-size: 1.1rem;
+}
+
+.c-dim-info-text--ad {
+  color: #878787;
+}
+
+.c-dim-row--rate {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+
+.resets-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.reset-container h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.reset-container {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.3rem;
+  color: var(--color-text);
+  font-family: Roboto;
+}
+
+.particle {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  z-index: 0;
+  color: var(--color-text);
+  background-image: url("../icon.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.o-primary-btn--disabled {
+  border-color: var(--color-bad);
+  background-color: #E3E3E3;
+}
+
+.c-android-ui--bottom {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+.c-android-ui--bottom__tab-btn {
+  min-width: 5rem;
+  flex: 1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  pointer-events: all;
+  color: #a9d6d1;
+}
+
+.c-android-ui--bottom__subtab-btn {
+   min-width: 10rem;
+ }
+
+.android-tab-bar {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  height: 4.1rem;
+  overflow-x: auto;
+  background-color: var(--color-android-ui);
+  line-height: 0;
+}
+
+.c-android-ui--bottom__tab-btn--open {
+  color: #fff;
+  border: 0.2rem solid #D81B60;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+}
+
+.c-hotkey-btn {
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: #D1E9E6;
+  font-size: 1.5rem;
+  border-radius: 5.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  pointer-events:all;
+  color: black;
+  font-family: sans-serif;
+  text-shadow: 0.05rem 0 #000;
+  transition-duration: 0.1rem;
+}
+
+.c-hotkey-btn--active {
+  background-color: #C5DBD8;
+}
+
+.c-hotkey-btn--marked {
+  text-decoration: underline;
+}
+
+.c-hotkey-btn__small {
+  font-size: 1.2rem;
+}
+
+.l-hotkeys-row {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+}
+
+.l-old-ui--achievement {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.l-screen-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-overlay);
+  z-index: 6;
+  overflow: hidden;
+}
+
+.o-achievement--open {
+  z-index: 8;
+}
+
+.ui-wrapper--overflow {
+  overflow: hidden !important;
+}
+.btn-big-crunch {
+  background-color: #f6f6f6;
+  padding: 0.8rem 2.5rem;
+  border: var(--color-infinity) solid 0.3rem;
+  border-radius: var(--var-border-radius, 0.5rem);
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: black;
+  margin: 0.3rem 0;
+}
+
+.c-crunch-text {
+  color: #878787;
+}
+
+.c-autobuyer-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.o-challenge-header-btn,
+.o-achievement-header-btn {
+  margin: 0.2rem;
+}
+
+.l-infinity-upgrade-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-infinity-upgrade-column-text {
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 1.4rem;
+  color: black;
+  margin: 0;
+}
+
+.quick-reset-conatiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-android-tooltip {
+  position: absolute;
+  width: 12rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: var(--var-border-radius, 0.3rem);
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+  padding: 0.6rem 0.8rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  margin-left: -6rem;
+  z-index: 4;
+  bottom: 130%;
+}
+
+.a-android-tooltip-leave-active,
+.a-android-tooltip-enter-active {
+  transition: transform 0.15s linear;
+}
+
+.c-android-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 0.5rem solid transparent;
+  border-right: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-top: 0.5rem solid white;
+  margin-left: -0.5rem;
+}
+
+.a-android-tooltip-enter,
+.a-android-tooltip-leave-to {
+  transform: scale(0%);
+}
+
+.c-android-tooltip--container {
+  z-index: 2;
+  width: auto;
+  height: auto;
+}
+
+.l-equipped-glyphs {
+  justify-content: flex-end;
+}
+
+.c-glyph-page-btn {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 2.2rem;
+  padding: 0;
+  border-width: 0.1rem;
+}
+
+.c-glyph-page-text {
+  padding: 0 0.3rem;
+  font-weight: bold;
+  color: black;
+}
+
+.o-glyph-toggle-options {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.tooltip-slot {
+  display: inline-block;
+}
+
+.a-header-page-leave-active,
+.a-header-page-enter-active {
+  transition: all 0.1s ease;
+}
+.a-header-page-enter {
+  transform: translateX(100vw);
+}
+
+
+.a-header-page-leave-to {
+  transform: translateX(-100vw);
+}
+
+.c-glyphs-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.l-select-glyph {
+  z-index: 4;
+}
+
+.l-old-ui--achievement .l-old-ui__header {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: calc(100% - 1rem);
+}
+
+.o-time-theorem-shop {
+  width: 100%;
+  color: #878787;
+}
+
+.o-primary-btn--option--no-padding {
+  padding: 0;
+}
+
+.c-tt-amount {
+  font-family: Roboto;
+  color: #358CCA;
+  font-size: 1.4rem;
+}
+
+.c-st-amount {
+  font-family: Roboto;
+  color: var(--color-enslaved--base);
+  font-size: 1.4rem;
+}
+
+.c-tt-gen,
+.c-tt-total {
+  font-size: 1.1rem;
+}
+
+.c-tt-max-all {
+  flex: initial;
+  width: calc(33.3333% - 0.4rem);
+  height: 3.25rem;
+}

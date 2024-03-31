@@ -1,0 +1,463 @@
+.l-time-studies-tab {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.l-time-studies-tab__tree {
+  margin-top: 3rem;
+  margin-bottom: 12.5rem;
+}
+
+.o-time-study-slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0.3rem 0.5rem;
+}
+
+.l-time-study-slider {
+  margin: 0 0.5rem;
+}
+
+.l-time-study-options {
+  display: flex;
+  flex-direction: row;
+}
+
+.l-time-study-options > * {
+  margin: 0.2rem;
+}
+
+.l-time-study-tree {
+  position: relative;
+  touch-action: manipulation;
+}
+
+.l-studies-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.l-studies-scale-container {
+  transform-origin: center top;
+}
+
+.l-old-ui--achievement .l-time-studies-tab .c-subtab-option-container {
+  margin: 0.5rem;
+}
+
+.l-time-study {
+  position: absolute;
+  z-index: 1;
+}
+
+.l-time-study-connection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* #region o-time-study */
+
+.c-pelle-useless {
+  width: 18rem;
+  height: 8.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: crimson;
+  border: 0.1rem solid;
+  border-radius: var(--var-border-radius, 0.4rem);
+  transition-duration: 0.2s;
+  text-decoration: line-through;
+}
+
+.c-pelle-useless-available {
+  cursor: pointer;
+}
+
+.c-pelle-useless--unavailable {
+  color: black;
+  filter: grayscale(90%);
+}
+
+
+.c-pelle-useless--bought {
+  background-color: crimson;
+  filter: grayscale(50%);
+}
+
+.o-time-study {
+  width: 18rem;
+  height: 8.5rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  background-color: black;
+  border: 0.1rem solid #691FA5;
+  border-radius: 0.6rem;
+  transition-duration: 0.2s;
+  line-height: 1.3rem;
+  padding: 0.5rem;
+}
+ 
+.o-time-study--available {
+  cursor: pointer;
+}
+
+.o-time-study--unavailable {
+  color: black;
+}
+
+@keyframes a-time-study {
+  0% { box-shadow: inset 0 0 0.3rem 0; }
+  50% { box-shadow: inset 0 0 2rem 0; }
+  100% { box-shadow: inset 0 0 0.3rem 0; }
+}
+
+.o-time-study--small {
+  width: 12rem;
+  font-size: 0.85rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.o-time-study-normal--available {
+  color: #C5ADFF;
+  border-color: #C5ADFF;
+}
+
+
+
+.o-time-study-antimatter-dim--available {
+  color: #62EA88;
+  border-color: #62EA88;
+}
+
+
+.o-time-study-infinity-dim--available {
+  color: #E6AF63;
+  border-color: #E6AF63;
+}
+
+
+.o-time-study-time-dim--available {
+  color: #E978FF;
+  border-color: #E978FF;
+}
+
+
+.o-time-study-active--available {
+  color: #FF8480;
+  border-color: #FF8480;
+}
+
+
+.o-time-study-passive--available {
+  color: #CE83F8;
+  border-color: #CE83F8;
+}
+
+
+.o-time-study-idle--available {
+  color: #A0B0FF;
+  border-color: #A0B0FF;
+}
+
+
+.o-time-study-eternity-challenge--available {
+  color: #8D48C3;
+  background-color: #F5EEFA;
+}
+
+
+.o-time-study-dilation--available {
+  color: #A4DD17;
+  background-color: black;
+  border-color: #A4DD17;
+}
+
+
+.o-time-study-reality--available {
+  color: var(--color-reality);
+  background-color: white;
+  border-color: var(--color-reality);
+}
+
+
+.o-time-study-triad--available {
+  color: var(--color-v--base);
+  background: black;
+  border-color: var(--color-v-base);
+}
+
+
+@keyframes a-time-study-dilation {
+  0% { box-shadow: inset 0.5rem  0       2rem; }
+  25% { box-shadow: inset 0       0.5rem  2rem; }
+  50% { box-shadow: inset -0.5rem 0       2rem; }
+  75% { box-shadow: inset 0       -0.5rem 2rem; }
+  100% { box-shadow: inset 0.5rem  0       2rem; }
+}
+
+.o-time-study-normal--unavailable {
+  background-color: #c8c8c8;
+}
+
+
+.o-time-study-antimatter-dim--unavailable {
+  background-color: #94a89a;
+}
+
+.o-time-study-infinity-dim--unavailable {
+  background-color: #a8a094;
+}
+
+.o-time-study-time-dim--unavailable {
+  background-color: #a294a8;
+}
+
+.o-time-study-active--unavailable {
+  background-color: #a89494;
+}
+
+.o-time-study-passive--unavailable {
+  background-color: #9b94a8;
+}
+
+.o-time-study-idle--unavailable {
+  background-color: #949ea8;
+}
+
+.o-time-study-dark--available {
+  color: black;
+  background-color: white;
+  border-color: black;
+}
+
+.o-time-study-light--available {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+
+.o-time-study-dark--unavailable {
+  background-color: #C8C8C8;
+}
+
+.o-time-study-light--unavailable {
+  background-color: #C8C8C8;
+}
+
+.o-time-study-eternity-challenge--unavailable {
+  background-color: #c8c8c8;
+}
+
+.o-time-study-dilation--unavailable {
+  background-color: #9ca894;
+}
+
+.o-time-study-reality--unavailable {
+  background-color: #94a895;
+}
+
+.o-time-study-triad--unavailable {
+  background-color: #a8a494;
+}
+
+
+.o-time-study-normal--bought {
+  color: black;
+  background-color: #C5ADFF;
+}
+
+.o-time-study-antimatter-dim--bought {
+  color: black;
+  background-color: #62EA88;
+}
+
+.o-time-study-infinity-dim--bought {
+  color: black;
+  background-color: #E6AF63;
+}
+
+.o-time-study-time-dim--bought {
+  color: black;
+  background-color: #E978FF;
+}
+
+.o-time-study-active--bought {
+  color: black;
+  background-color: #FF8480;
+}
+
+.o-time-study-passive--bought {
+  color: black;
+  background-color: #CE83F8;
+}
+
+.o-time-study-idle--bought {
+  color: black;
+  background-color: #A0B0FF;
+}
+
+.o-time-study-dark--bought {
+  color: white;
+  background-color: black;
+}
+
+.o-time-study-light--bought {
+  color: black;
+  background-color: white;
+}
+
+.o-time-study-eternity-challenge--bought {
+  color: black;
+  background-color: #CD88F8;
+}
+
+.o-time-study-eternity-challenge--running {
+  color: var(--color-eternity);
+  background-color: black;
+  border: 0.1rem solid var(--color-eternity);
+}
+
+@keyframes a-eternity-challenge-running {
+  0% { box-shadow: inset 1rem  0       3rem #490066; }
+  25% { box-shadow: inset 0     0.5rem  3rem #490066; }
+  50% { box-shadow: inset -1rem 0       3rem #490066; }
+  75% { box-shadow: inset 0     -0.5rem 3rem #490066; }
+  100% { box-shadow: inset 1rem  0       3rem #490066; }
+}
+
+.o-time-study-dilation--bought {
+  color: black;
+  background-color: #A4DD17;
+}
+
+.o-time-study-reality--bought {
+  color: black;
+  background-color: var(--color-reality);
+}
+
+.o-time-study-triad--bought {
+  color: black;
+  background-color: var(--color-v--base);
+}
+
+.o-time-study--secret {
+  opacity: 0;
+  transition: opacity 0.2s;
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+
+.o-time-study--secret-unlocked {
+  opacity: 1;
+  transition: opacity 0.2s;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+
+.o-time-study--enslaved {
+  opacity: 0.02;
+  background: var(--color-enslaved--base);
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.o-time-study--enslaved-unlocked {
+  opacity: 1;
+  background: var(--color-eternity);
+  cursor: default;
+}
+
+/* #endregion o-time-study */
+
+.o-time-study-connection {
+  stroke: #444444;
+  /* This one should be px, because it rem svg behaves weirdly under scale */
+  stroke-width: 16px;
+  transition: stroke 0.3s;
+}
+
+.o-time-study-connection--antimatter-dim {
+  stroke: #37533f;
+}
+
+.o-time-study-connection--infinity-dim {
+  stroke: #534737;
+}
+
+.o-time-study-connection--time-dim {
+  stroke: #4a3753;
+}
+
+.o-time-study-connection--active {
+  stroke: #533737;
+}
+
+.o-time-study-connection--passive {
+  stroke: #403753;
+}
+
+.o-time-study-connection--idle {
+  stroke: #374553;
+}
+
+.o-time-study-connection--eternity-challenge {
+  stroke: #4b3753;
+}
+
+.o-time-study-connection--dilation {
+  stroke: #759362;
+}
+
+.o-time-study-connection--bought {
+  stroke: black;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--antimatter-dim {
+  stroke: #62EA88;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--infinity-dim {
+  stroke: #E6AF63;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--time-dim {
+  stroke: #E978FF;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--active {
+  stroke: #FF8480;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--passive {
+  stroke: #ce83f8;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--idle {
+  stroke: #a0b0ff;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--eternity-challenge {
+  stroke: #490066;
+}
+
+.o-time-study-connection--bought.o-time-study-connection--dilation {
+  stroke: #A4DD17;
+}
+
+.o-time-study-connection--secret {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.o-time-study-connection--secret-unlocked {
+  opacity: 1;
+  transition: opacity 0.2s;
+  transition-delay: 0.1s;
+}
