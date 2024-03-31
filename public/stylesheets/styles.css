@@ -439,7 +439,7 @@ button:focus {
   height: 100%;
   position: absolute;
   z-index: 999;
-  background: url("./public/images/loading.png") no-repeat;
+  background: url("../public/images/loading.png") no-repeat;
   background-color: #111;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -2209,16 +2209,16 @@ br {
 }
 
 .o-achievement--normal {
-  background-image: url("./public/images/normal achievements.png");
+  background-image: url("../public/images/normal achievements.png");
 }
 
 .o-achievement--cancer {
-  background-image: url("./public/images/cancer achievements.png");
+  background-image: url("../public/images/cancer achievements.png");
 }
 
 .o-achievement--secret {
   background-size: 100vw 50vw;
-  background-image: url("./public/images/secret achievements.png");
+  background-image: url("../public/images/secret achievements.png");
 }
 
 .o-achievement--locked {
@@ -2233,7 +2233,7 @@ br {
   background-color: #878787;
   -webkit-background-size: 12.5vw;
   background-size: 12.5vw;
-  background-image: url("./public/images/achhidden.png");
+  background-image: url("../public/images/achhidden.png");
 }
 
 .o-achievement__tooltip {
@@ -4436,7 +4436,7 @@ kbd {
   position: relative;
   -webkit-background-clip: text;
   background-clip: text;
-  background-image: url("./public/images/noise.png");
+  background-image: url("../public/images/noise.png");
   animation: a-effarig-run-button--running-noise 15s infinite alternate;
 
   -webkit-text-fill-color: rgba(255, 0, 0, 50%);
@@ -6205,7 +6205,7 @@ kbd {
   top: -1.5rem;
   left: 1rem;
   background-color: transparent;
-  background-image: url("./public/images/laitela-icon.svg");
+  background-image: url("../public/images/laitela-icon.svg");
   background-position: center;
   background-repeat: repeat-y;
   transform: rotate(90deg);
@@ -6392,7 +6392,7 @@ kbd {
   height: 12rem;
   align-items: center;
   background-color: black;
-  background-image: url("./public/images/laitela-icon.svg");
+  background-image: url("../public/images/laitela-icon.svg");
   background-position: center;
   background-repeat: repeat-y;
   background-size: 4.95rem;
