@@ -1,4 +1,4 @@
-import TWEEN from "../modules/tween.js";
+import TWEEN from "../modules/Tween.js";
 
 import { DC } from "./core/constants.js";
 import { deepmergeAll } from "./utility/deepmerge.js";
