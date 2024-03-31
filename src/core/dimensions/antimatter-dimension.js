@@ -5,7 +5,7 @@ import { DimensionState } from "./dimension.js";
 // Multiplier applied to all Antimatter Dimensions, regardless of tier. This is cached using a Lazy
 // and invalidated every update.
 export function antimatterDimensionCommonMultiplier() {
-  let multiplier = DC.E2;
+  let multiplier = DC.D1;
 
   multiplier = multiplier.times(Achievements.power);
   multiplier = multiplier.times(ShopPurchase.dimPurchases.currentMult);

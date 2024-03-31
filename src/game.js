@@ -1107,3 +1107,5 @@ function animateTweens(time) {
 }
 
 animateTweens();
+
+EventHub.on(GAME_EVENT.CLOSE_MODAL, () => EventHub.dispatch(GAME_EVENT.OVERLAY_UPDATE));

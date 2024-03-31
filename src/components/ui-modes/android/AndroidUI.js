@@ -1,6 +1,4 @@
 import BigCrunchButton from "../BigCrunchButton.js";
-import EternityPointsHeader from "../../EternityPointsHeader.js";
-import InfinityPointsHeader from "../../InfinityPointsHeader.js";
 import GameHeader from "../GameHeader.js";
 import NewsTicker from "../NewsTicker.js";
 
@@ -9,10 +7,7 @@ export default {
 	components: {
 	  BigCrunchButton,
     GameHeader,
-    NewsTicker,
-    InfinityPointsHeader,
-    EternityPointsHeader,
-    BigCrunchButton
+    NewsTicker
 	},
 	data() {
 		return {
