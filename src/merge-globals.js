@@ -38,8 +38,8 @@ mergeIntoGlobal(PerksTab);
 
 // End of legacy stuff
 
-import * as core from "./core/globals.js";
-mergeIntoGlobal(core);
+//import * as core from "./core/globals.js";
+//mergeIntoGlobal(core);
 
 import * as game from "./game.js";
 mergeIntoGlobal(game);
