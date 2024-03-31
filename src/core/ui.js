@@ -8,7 +8,7 @@ import { useLongPress, useRepeatingClick } from "./longpress.js";
 import { notify } from "./notify.js";
 import { state } from "./ui.init.js";
 
-//import GameUIComponent from "../components/GameUIComponent.js";
+import GameUIComponent from "../components/GameUIComponent.js";
 
 Vue.mixin({
   computed: {

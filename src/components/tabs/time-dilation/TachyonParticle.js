@@ -1,4 +1,3 @@
-
 import TWEEN from "../../../../modules/Tween.js";
 
 export default {
