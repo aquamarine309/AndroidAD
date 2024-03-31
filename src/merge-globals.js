@@ -18,11 +18,23 @@ function mergeIntoGlobal(object) {
 import * as Utils from "./core/utils.js";
 mergeIntoGlobal(Utils);
 
-//import * as GameDB from "./core/secret-formula/index.js";
+import * as GameDB from "./core/secret-formula/index.js";
 mergeIntoGlobal(GameDB);
 
 // This is a list of legacy stuff, please don't add
 // any more globals to the component files
+
+import * as AutomatorBlockEditor from "./components/tabs/automator/AutomatorBlockEditor.js";
+mergeIntoGlobal(AutomatorBlockEditor);
+
+import * as AutomatorBlocks from "./components/tabs/automator/AutomatorBlocks.js";
+mergeIntoGlobal(AutomatorBlocks);
+
+import * as AutomatorTextEditor from "./components/tabs/automator/AutomatorTextEditor.js";
+mergeIntoGlobal(AutomatorTextEditor);
+
+import * as PerksTab from "./components/tabs/perks/PerksTab.js";
+mergeIntoGlobal(PerksTab);
 
 // End of legacy stuff
 
